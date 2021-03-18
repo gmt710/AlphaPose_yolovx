@@ -1,0 +1,23 @@
+torch==1.7.0
+torchvision==0.8.1	
+opencv-python==4.1.0.25
+tqdm
+natsort
+Cython
+pycocotools
+scipy
+terminaltables
+wf-pycocotools==2.0.1.1
+scikit-image>=0.16.2
+googledrivedownloader
+protobuf>=3.8.0
+websocket-client
+pandas
+seaborn
+
+# python setup.py build develop --user
+# apt-get update
+# apt-get -y install python3.6-tk
+
+
+
