@@ -6,6 +6,21 @@
 a google colab link to test
 https://colab.research.google.com/drive/1o9RhThxyxHr4P3n6a19UGmc5LTRn5zfp?usp=sharing
 
+## how to run:
+follow my csdn: https://blog.csdn.net/qq_35975447/article/details/114940943
+if yolov5:
+python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_2x-dcn.yaml --checkpoint pretrained_models/fast_dcn_res50_256x192.pth --indir examples/demo/ --vis --showbox --save_img --pose_track --sp --vis_fast --detector yolov5
+
+if yolov4:
+python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_2x-dcn.yaml --checkpoint pretrained_models/fast_dcn_res50_256x192.pth --indir examples/demo/ --vis --showbox --save_img --pose_track --sp --vis_fast --detector yolov4
+
+if yolov3:
+python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_2x-dcn.yaml --checkpoint pretrained_models/fast_dcn_res50_256x192.pth --indir examples/demo/ --vis --showbox --save_img --pose_track --sp --vis_fast --detector yolov3
+
+or 
+
+python scripts/demo_inference.py --cfg configs/coco/resnet/256x192_res50_lr1e-3_2x-dcn.yaml --checkpoint pretrained_models/fast_dcn_res50_256x192.pth --indir examples/demo/ --vis --showbox --save_img --pose_track --sp --vis_fast --detector yolo
+
 
 ## News!
 - Aug 2020: [**v0.4.0** version](https://github.com/MVIG-SJTU/AlphaPose) of AlphaPose is released! Stronger tracking! Include whole body(face,hand,foot) keypoints!
